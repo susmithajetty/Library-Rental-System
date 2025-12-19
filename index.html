@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📚 Library Management System</h1>
+  <p>Manage books easily</p>
+</header>
+
+<main class="container">
+
+  <!-- Add Book -->
+  <section class="card">
+    <h2>Add Book</h2>
+    <input id="bookId" type="number" placeholder="Book ID">
+    <input id="title" type="text" placeholder="Title">
+    <input id="author" type="text" placeholder="Author">
+    <button onclick="addBook()">Add Book</button>
+  </section>
+
+  <!-- Rent / Return -->
+  <section class="card">
+    <h2>Rent / Return Book</h2>
+    <input id="actionId" type="number" placeholder="Book ID">
+    <button onclick="rentBook()">Rent Book</button>
+    <button class="secondary" onclick="returnBook()">Return Book</button>
+  </section>
+
+  <!-- View -->
+  <section class="card">
+    <h2>View Books</h2>
+    <button onclick="showAll()">Show All Books</button>
+    <button class="secondary" onclick="showAvailable()">Available Books</button>
+  </section>
+
+</main>
+
+<section class="output">
+  <h2>Output</h2>
+  <div id="output">No actions performed yet</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
